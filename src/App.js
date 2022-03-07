@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import BoxAnnotator from "./components/annotation/BoxAnnotator";
+import thali2 from "./components/images/thali2.jpeg";
+import thali from "./components/images/thali.jpeg";
+import thali3 from "./components/images/thali3.jpg";
 
 function App() {
+  const food = ["food1", "food2", "food3", "food4", "food5", "food6", "food7"];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BoxAnnotator image={thali2} classes={food}></BoxAnnotator>
     </div>
   );
 }
